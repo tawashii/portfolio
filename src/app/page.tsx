@@ -227,26 +227,14 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               地方在住のため、フルリモートでの勤務を希望しています。
             </p>
-            <a 
-              href="mailto:hitonari.cr@gmail.com?subject=ポートフォリオサイトからのお問い合わせ&body=お疲れ様です。%0D%0A%0D%0A"
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-              onClick={(e) => {
-                // フォールバック: コピー機能
-                if (!window.navigator.userAgent.includes('Mobile')) {
-                  const email = 'hitonari.cr@gmail.com';
-                  navigator.clipboard?.writeText(email).then(() => {
-                    console.log('Email copied to clipboard:', email);
-                  }).catch(() => {
-                    console.log('Could not copy email');
-                  });
-                }
-              }}
-            >
-              メールでお問い合わせ
-            </a>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-              メーラーが起動しない場合：hitonari.cr@gmail.com
-            </p>
+            <div className="text-center">
+              <p className="text-lg text-gray-700 dark:text-gray-200 mb-4">
+                お問い合わせはこちらまで
+              </p>
+              <p className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                hitonari.cr@gmail.com
+              </p>
+            </div>
           </div>
         </div>
       </section>
