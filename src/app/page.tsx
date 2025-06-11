@@ -241,7 +241,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-gray-100 dark:bg-gray-900 py-8 text-center text-gray-600 dark:text-gray-400">
-        <p>&copy; 2024 tawashi Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 tawashi Portfolio. All rights reserved.</p>
       </footer>
     </>
   );
